@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+           Amrutha Joshi
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            amrutha@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +919964024625
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me" >Skills</a>
+          <a class="topmenu" href="#about-me">Project</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img style="height:25rem; width:25rem; margin-right: 6rem;"src="https://img.freepik.com/premium-vector/woman-profile-cartoon_18591-58480.jpg?w=360" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Amrutha Joshi! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I am a 3rd year Computer Science Student at NMAMIT Nitte.I have been practising Web Development for 2 years.
+            I have done various project on Web Development.I have also worked as a web development intern at DLithe pvt limited and responsible for developing an online music website.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png"/>
+          <h6>Node</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Trefle</h3>
+            <ul>
+              <li>A DBMS project on College Club Management System where the students can join and register for various events.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Cinepluz</h3>
+            <ul>
+              <li>A quiz website using HTML,CSS,JavaScript,PHP and MySql where the users can attempt quiz on their favourite movies and series.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>School Simulation</h3>
+            <ul>
+              <li>A Computer Graphics project using openGL showing the journey of a student in the school.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Amrutha is a very quick learner and quickly grasps key concepts of Web development. 
+          She got a great attitude & she is an excellent team player. 
+          She has a curious mind and asks the right question. 
+          She takes initiative within a team and has potentials to lead the team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Amrutha ia an excellent intern.She completes the work assigned to her on time.She is always ready to make necessary modifications to the project when needed.
+          She is always ready to learn new things. 
+          We would definitely like to extend her period of internship in our company
+           by looking at her sincere work.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Amrutha in few Projects in my previous sem. 
+          She is very dedicated person who has in depth knowledge about the Subject. 
+          It was a great experience to work with her. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <img style="height:25px;width:25px" src="html_finalprojimages/home.png"/>
+        
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(true)">Ok</button>
+    </div>
+  </body>
+</html>
